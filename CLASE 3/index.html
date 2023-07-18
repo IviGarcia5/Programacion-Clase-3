@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="style.css">
+  <style>
+      body {
+        background-image: url(./gatitos\ proyecto\ 1.jpg)
+           }
+    </style>
+  </head>
+  
+  <body>
+    <div class="cards-info">
+        <h1 style="color: hotpink;"><i> GATICORP </i></h1>
+        <p style="color: black;">Encontra los mejores productos para tu mascotas!
+        </p> 
+        
+     </div>
+     <div class="navbar-collapse collapse">
+          <a href="http://https://www.instagram.com/ivigarcia/"></a>
+          <ul class="nav navbar-nav">
+            <li <?php if ($pagina=="inicio" ) {echo "class'active'";}?>><a href="index.php"> 
+                   Inicio</a></li>
+            <li <?php if ($pagina=="nosotros" ) {echo "class='active'";}?>><a href="nosotros.php   
+                  ">Nosotros</a></li>
+            <li <?php if ($pagina=="contacto" ) {echo "class='active'";}?>><a href="contacto.php   
+                  ">Contacto</a></li>
+            <li <?php if ($pagina=="contacto" ) {echo "class='active'";}?>><a href="contacto.php   
+                  ">Contacto</a></li>
+            </li>
+            <form class="navbar-form navbar-right" role="form">
+              <div class="form-group">
+                <input type="text" placeholder="Email" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="Password" class="form-control">
+              </div>
+              <a href="#" class="btn btn-xs btn-default"> <span class="glyphicon glyphicon-search"></span></a>
+  
+              <a href="#" style="margin-left: 10px" class="btn btn-success">Idioma</button>
+                  <a href="#" style="margin-left: 15px" class="btn btn-lg btn-primary">Upload  <span class="glyphicon glyphicon-open"></span></a>
+              <a href="login/index.html" style="margin-left: 16px" class="btn btn-success">Log In</a>
+  
+            </form>
+        </div>
+  <div class="full-img" id="full-img">
+    
+    <span id="btn-close"></span>
+  </div>
+     <div class="cards">
+        <h3>Cuchitas y mas!</h3>
+        <!--img-->
+        <div class="card-body">
+          <div class="links">
+          <!--links-->
+          </div>
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+              <a class="navbar-brand" href="#">Aloysia</a>
+            </div>
+          <body>
+            <header>
+            <img src="C:\xampp\htdocs\pagina\maestro-y-estudiante.gif" alt="Computer Man" style="width:48px;height:48px;" align="right"> 
+            </header>
+            
+                    <div id="menu">
+             <ul>
+              <li><a href="..." title="...">Calificaciones</a></li>
+              <li><a href="..." title="...">Reportes</a></li>
+              <li><a href="..." title="...">Acerca de</a></li>
+              <li><a href="..." title="...">Cerrar Sesion</a></li>
+             </ul>
+            </div>
+            <input id="activar" name="activar" type="checkbox">
+            <label class="inputlabel" for="activar">Clic para ver contenido</label>
+            <div class="desplegable">
+              Aquí podría ir cualquier tipo de elemento
+            </div>
+        <button id="btn-description">Abona aqui</button>
+      
+  </div>
+  <div class="full-img" id="full-img">
+    <div class="cards-info">
+       <h2>Titulo 2</h2>
+        <br>
+       <p>
+         Lorem alskdjlwekmdpwelkd
+       </p> 
+    </div>
+    <span id="btn-close">X</span>
+  </div>
+  <div class="cards">
+      <h3>titulo 2</h3>
+      <!--img-->
+      <div class="card-body">
+        <div class="links">
+        <!--links-->
+        </div>
+        <button id="btn-description">Descripción</button>
+      </div>
+  </div>
+</head>
+<body>
+	<div class="container">
+		<h1>Carrito</h1>
+		<hr>
+		<table class="table">
+			<thead>
+			  <tr>
+				<th scope="col">#</th>
+				<th scope="col">Item</th>
+				<th scope="col">Cantidad</th>
+				<th scope="col">Acción</th>
+				<th scope="col">Total</th>
+			  </tr>
+			</thead>
+			<tbody id="items"></tbody>
+			<tfoot>
+			  <tr id="footer">
+				<th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+			  </tr>
+			</tfoot>
+		  </table>
+		<div class="row" id="cards"></div>
+	</div>
+
+	<template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                vaciar todo
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+
+    <template id="template-carrito">
+      <tr>
+        <th scope="row">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+            <button class="btn btn-info btn-sm">
+                +
+            </button>
+            <button class="btn btn-danger btn-sm">
+                -
+            </button>
+        </td>
+        <td>$ <span>500</span></td>
+      </tr>
+    </template>
+
+
+	<template id="template-card">
+		<div class="col-12 mb-2 col-md-4">
+		  <div class="card">
+			  <img src="" alt="" class="card-img-top">
+			<div class="card-body">
+			  <h5>Titulo</h5>
+			  <p>precio</p>
+			  <button class="btn btn-dark">Comprar</button>
+			</div>
+		  </div>
+		</div>
+	  </template>
+
+
+<script src="app.js"></script>
+</body>
+</html>
+
+
+
+  
